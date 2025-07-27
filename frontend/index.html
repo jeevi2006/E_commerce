@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini E-Commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Mini E-Commerce</h1>
+        <div class="cart-summary">
+          Cart: <span id="cart-item-count">0</span> items
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="product-section">
+          <h2>Product List</h2>
+          <div id="product-list">
+            <p>Loading products...</p>
+          </div>
+        </section>
+
+        <section class="cart-checkout-section">
+          <div class="cart-summary-box">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+              <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-total">
+              Total: ₹<span id="cart-total-amount">0.00</span>
+            </div>
+          </div>
+
+          <div class="checkout-box">
+            <h2>Checkout</h2>
+            <h3>Shipping Information</h3>
+            <form id="checkout-form">
+              <input type="text" id="address" placeholder="996 pallas street" required />
+              <input type="text" id="city" placeholder="cuddalore" required />
+              <input type="text" id="zipCode" placeholder="607102" required />
+              <input type="text" id="country" placeholder="india" value="India" required />
+              <button type="submit" id="place-order-btn">Place Order</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="product.js"></script>
+  </body>
+</html>
